@@ -1,24 +1,12 @@
-import React, {Component} from 'react';
-import {StyleSheet, View, Text} from 'react-native';
-
-import {Colors} from 'react-native/Libraries/NewAppScreen';
-
-export default class App extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome</Text>
-      </View>
-    );
-  }
-}
+import React from 'react';
+import { StyleSheet, View, Text } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: Colors.lighter,
+    backgroundColor: '#f5fcff',
   },
   welcome: {
     fontSize: 20,
@@ -26,3 +14,11 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
 });
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.welcome}>Welcome</Text>
+    </View>
+  );
+}
